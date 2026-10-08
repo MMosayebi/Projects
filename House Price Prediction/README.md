@@ -1,6 +1,6 @@
 🏠 House Price Prediction
 
-A regression project focused on predicting house prices using Python and Machine Learning.
+«A regression project focused on predicting house prices using Python and Machine Learning.»
 
 🎯 Project Overview
 
@@ -8,27 +8,29 @@ This project was developed as a Machine Learning practice project using a hypoth
 
 The goal was to build a regression workflow that predicts house prices based on:
 
-📐 Area
-🛏️ Number of Rooms
-🚗 Parking
-📦 Warehouse
-🛗 Elevator
+- 📐 Area
+- 🛏️ Number of Rooms
+- 🚗 Parking
+- 📦 Warehouse
+- 🛗 Elevator
 
 Rather than focusing only on the final prediction, the project explores the complete workflow from data preparation to model evaluation.
 
+---
+
 🔍 Project Workflow
 
-Dataset → Data Cleaning → Data Preparation → EDA → Outlier Detection → Feature Scaling → Modeling → Evaluation → Prediction
+Raw Data → Data Cleaning → EDA → Outlier Detection → Feature Scaling → Modeling → Evaluation → Prediction
 
 01 · Data Cleaning
 
-A data cleaning workflow using Python and Pandas:
+The raw dataset was cleaned and prepared before applying Machine Learning models.
+
+This step includes:
 
 - Data inspection
-- Data type checking
-- Missing value checking
-- Duplicate checking
-- Data preparation
+- Handling data inconsistencies
+- Preparing features for modeling
 - Preparing the dataset for further analysis
 
 02 · Linear Regression
@@ -53,6 +55,8 @@ An automated Machine Learning workflow using PyCaret to:
 - Identify promising models
 - Explore automated ML capabilities
 
+---
+
 📊 Evaluation
 
 The models are evaluated using:
@@ -64,6 +68,8 @@ MSE| Penalizes larger errors
 RMSE| Measures prediction error in target units
 
 The Linear Regression model is treated as a baseline, providing a reference point for future model improvement.
+
+---
 
 📁 Project Structure
 
@@ -81,19 +87,30 @@ House Price Prediction/
 │
 └── requirements.txt
 
+---
+
 🛠️ Tech Stack
 
-Python · Pandas · NumPy · Scikit-learn · Matplotlib · Seaborn · PyCaret · Jupyter Notebook · Excel
+Python · Pandas · NumPy · Scikit-learn
+Matplotlib · Seaborn · PyCaret · Jupyter Notebook · Excel
+
+---
 
 📓 Notebooks
 
-🔹 Data Cleaning — View Notebook
+🔹 Data Cleaning
+"View Notebook" (https://github.com/MMosayebi/Projects/blob/main/House%20Price%20Prediction/Data%20Cleaning.ipynb)
 
-🔹 Linear Regression — View Notebook
+🔹 Linear Regression
+"View Notebook" (https://github.com/MMosayebi/Projects/blob/main/House%20Price%20Prediction/House%20Price%20Prediction%20%28using%20linear%20regression%29.ipynb)
 
-🔹 PyCaret Regression — View Notebook
+🔹 PyCaret Regression
+"View Notebook" (https://github.com/MMosayebi/Projects/blob/main/House%20Price%20Prediction/House%20Price%20Predcition%20%28using%20Pycaret%29.ipynb)
 
-🔹 Requirements — View requirements.txt
+🔹 Requirements
+"View requirements.txt" (https://github.com/MMosayebi/Projects/blob/main/House%20Price%20Prediction/requirements.txt)
+
+---
 
 🚀 Future Improvements
 
@@ -106,18 +123,17 @@ Python · Pandas · NumPy · Scikit-learn · Matplotlib · Seaborn · PyCaret ·
 - Prediction intervals
 - Improved preprocessing pipeline
 
+---
+
 💡 Key Takeaway
 
 This project was created to practice the end-to-end regression workflow and understand how different preprocessing and modeling decisions affect prediction performance.
 
-The dataset is hypothetical and intended for educational purposes, while the analysis, modeling workflow, evaluation, and experimentation were performed as part of this project.
+The dataset is hypothetical and intended for educational purposes, while the analysis, data cleaning, modeling workflow, evaluation, and experimentation were performed as part of this project.
 
-👨‍💻 Author
+---
+
+👤 Author
 
 Mohammad Mosayebi
-
-Sales & Marketing Data Analyst | Python | Excel | Power BI | SQL Server
-
-GitHub: MMosayebi
-
-⭐ If you find this project useful, feel free to star the repository.
+Data Analysis · Data Science · Machine Learning
