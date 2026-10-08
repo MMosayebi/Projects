@@ -8,148 +8,62 @@ This project was developed as a Machine Learning practice project using a hypoth
 
 The goal was to build a regression workflow that predicts house prices based on:
 
-- 📐 Area
-- 🛏️ Number of Rooms
-- 🚗 Parking
-- 📦 Warehouse
-- 🛗 Elevator
+📐 Area
+🛏️ Number of Rooms
+🚗 Parking
+📦 Warehouse
+🛗 Elevator
 
-Rather than focusing only on the final prediction, this project explores an end-to-end regression workflow, from data cleaning and exploratory analysis to model evaluation and prediction.
-
----
+Rather than focusing only on the final prediction, the project explores the complete workflow from data preparation to model evaluation.
 
 🔍 Project Workflow
 
-Dataset
-   ↓
-Data Cleaning
-   ↓
-EDA
-   ↓
-Outlier Detection
-   ↓
-Feature Preparation & Scaling
-   ↓
-Modeling
-   ↓
-Evaluation
-   ↓
-Prediction
+Dataset → Data Cleaning → Data Preparation → EDA → Outlier Detection → Feature Scaling → Modeling → Evaluation → Prediction
 
----
+01 · Data Cleaning
 
-🧹 01 · Data Cleaning
+A data cleaning workflow using Python and Pandas:
 
-The first stage of the project focuses on preparing the dataset for analysis and machine learning.
-
-The data-cleaning workflow includes:
-
-- Loading and inspecting the dataset
-- Checking data types
-- Identifying missing values
-- Checking duplicated records
-- Reviewing inconsistent data
-- Preparing features for modeling
-- Basic data validation
-
-Notebook:
-
-📓 Data Cleaning
-
-"Data Cleaning.ipynb"
-
----
-
-📊 02 · Exploratory Data Analysis
-
-Exploratory Data Analysis was performed to better understand the dataset and the relationship between the available features and house prices.
-
-The analysis includes:
-
-- Distribution analysis
-- Feature exploration
-- Relationship between features and price
-- Correlation analysis
-- Data visualization
-- Identifying potential anomalies and outliers
-
----
-
-📈 03 · Outlier Detection
-
-Outliers were investigated using the Interquartile Range (IQR) method.
-
-The general approach was:
-
-Q1 → First Quartile
-Q3 → Third Quartile
-IQR = Q3 - Q1
-
-Lower Bound = Q1 - 1.5 × IQR
-Upper Bound = Q3 + 1.5 × IQR
-
-This step was used to better understand the distribution of house prices and identify potentially unusual observations.
-
----
-
-🤖 04 · Linear Regression
-
-A manual Machine Learning workflow was implemented using Scikit-learn.
-
-The workflow includes:
-
+- Data inspection
+- Data type checking
+- Missing value checking
+- Duplicate checking
 - Data preparation
+- Preparing the dataset for further analysis
+
+02 · Linear Regression
+
+A manual Machine Learning workflow using Scikit-learn:
+
+- Data exploration and preparation
+- Outlier detection using IQR
 - Feature selection
 - Train/Test split
 - Feature scaling
 - Multiple Linear Regression
-- Model training
 - Model evaluation
 - Prediction on unseen data
 
-The Linear Regression model is used as a baseline model, providing a reference point for future model improvement.
+03 · PyCaret Regression
 
-Notebook:
+An automated Machine Learning workflow using PyCaret to:
 
-📓 Linear Regression
-
-"House Price Prediction (using linear regression).ipynb"
-
----
-
-⚙️ 05 · PyCaret Regression
-
-An automated Machine Learning workflow was also explored using PyCaret.
-
-The PyCaret workflow was used to:
-
-- Set up a regression environment
-- Compare multiple regression models
+- Compare regression models
 - Evaluate model performance
 - Identify promising models
-- Explore automated Machine Learning capabilities
-
-Notebook:
-
-📓 PyCaret Regression
-
-"House Price Predcition (using Pycaret).ipynb"
-
----
+- Explore automated ML capabilities
 
 📊 Evaluation
 
-The regression models are evaluated using several standard metrics:
+The models are evaluated using:
 
 Metric| Purpose
-R²| Measures the proportion of variance explained by the model
-MAE| Measures the average absolute prediction error
-MSE| Penalizes larger prediction errors
-RMSE| Measures prediction error in the same units as the target
+R²| Measures explained variance
+MAE| Average absolute prediction error
+MSE| Penalizes larger errors
+RMSE| Measures prediction error in target units
 
-Using multiple evaluation metrics provides a more complete view of model performance rather than relying on a single score.
-
----
+The Linear Regression model is treated as a baseline, providing a reference point for future model improvement.
 
 📁 Project Structure
 
@@ -162,78 +76,41 @@ House Price Prediction/
 │   └── HousePrice.csv
 │
 ├── Data Cleaning.ipynb
-├── House Price Prediction (using linear regression).ipynb
 ├── House Price Predcition (using Pycaret).ipynb
+├── House Price Prediction (using linear regression).ipynb
 │
 └── requirements.txt
 
----
-
 🛠️ Tech Stack
 
-- 🐍 Python
-- 🐼 Pandas
-- 🔢 NumPy
-- 📊 Matplotlib
-- 📈 Seaborn
-- 🤖 Scikit-learn
-- ⚙️ PyCaret
-- 📓 Jupyter Notebook
-- 📗 Microsoft Excel
-
----
+Python · Pandas · NumPy · Scikit-learn · Matplotlib · Seaborn · PyCaret · Jupyter Notebook · Excel
 
 📓 Notebooks
 
-🔹 Data Cleaning
+🔹 Data Cleaning — View Notebook
 
-Data inspection, cleaning, preprocessing, and preparation.
+🔹 Linear Regression — View Notebook
 
-Notebook: "Data Cleaning.ipynb"
+🔹 PyCaret Regression — View Notebook
 
-🔹 Linear Regression
-
-Manual regression workflow using Scikit-learn, including preprocessing, scaling, model training, evaluation, and prediction.
-
-Notebook: "House Price Prediction (using linear regression).ipynb"
-
-🔹 PyCaret Regression
-
-Automated regression workflow for comparing different Machine Learning models.
-
-Notebook: "House Price Predcition (using Pycaret).ipynb"
-
----
+🔹 Requirements — View requirements.txt
 
 🚀 Future Improvements
-
-Several improvements can be explored in future versions of the project:
 
 - Feature engineering
 - Advanced regression models
 - Cross-validation
 - Hyperparameter tuning
-- Improved outlier handling
+- Better outlier handling
 - Model comparison
 - Prediction intervals
-- Improved preprocessing pipelines
-- Feature importance analysis
-- More robust model evaluation
-- Deployment of the final model
-
----
+- Improved preprocessing pipeline
 
 💡 Key Takeaway
 
-This project was created to practice and understand the end-to-end Machine Learning regression workflow.
+This project was created to practice the end-to-end regression workflow and understand how different preprocessing and modeling decisions affect prediction performance.
 
-The main focus was not only on obtaining a final prediction, but also on understanding how different stages of a Machine Learning project — including data cleaning, exploratory analysis, preprocessing, feature scaling, model selection, and evaluation — can affect model performance.
-
-The project also provides a comparison between a manually implemented Scikit-learn workflow and an automated PyCaret workflow.
-
-The dataset is hypothetical and was obtained from an educational course. It is intended for learning and practice purposes, while the data preparation, analysis, modeling, evaluation, and experimentation were performed as part of this project.
-
----
+The dataset is hypothetical and intended for educational purposes, while the analysis, modeling workflow, evaluation, and experimentation were performed as part of this project.
 
 👨‍💻 Author
 
@@ -242,7 +119,5 @@ Mohammad Mosayebi
 Sales & Marketing Data Analyst | Python | Excel | Power BI | SQL Server
 
 GitHub: MMosayebi
-
----
 
 ⭐ If you find this project useful, feel free to star the repository.
