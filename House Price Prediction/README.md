@@ -121,7 +121,14 @@ The dataset is hypothetical and intended for educational purposes, while the ana
 
 ---
 
-### 👤 Author
+## 👨‍💻 Author
 
 **Mohammad Mosayebi**
-Data Analysis · Data Science · Machine Learning
+
+**Sales & Marketing Data Analyst | Python | Excel | Power BI | SQL Server**
+
+GitHub: [MMosayebi](https://github.com/MMosayebi)
+
+---
+
+⭐ If you find this project useful, feel free to star the repository.
