@@ -1,91 +1,122 @@
 # 🏠 House Price Prediction
 
-A Machine Learning regression project for predicting house prices based on property features.
+### A Regression project for predicting house prices with Python
 
-### 🎯 Goal
-
-Build a regression model that predicts house prices using:
-
-* 📐 Area
-* 🛏️ Number of Rooms
-* 🚗 Parking
-* 📦 Warehouse
-* 🛗 Elevator
+This project explores **house price prediction** using two different Machine Learning approaches — a manually implemented **Linear Regression workflow** and an automated **PyCaret Regression workflow**.
 
 ---
 
-### 🔄 Workflow
+## 🎯 Objective
 
-```text
-Data → EDA → Preprocessing → Outlier Detection
-     → Train/Test Split → Scaling
-     → Regression → Evaluation → Prediction
-```
+Predict house prices based on key property characteristics:
 
-### 🤖 Model
+**Area · Rooms · Parking · Warehouse · Elevator**
 
-**Multiple Linear Regression** is used as the baseline model.
+The project focuses on the complete process:
 
-The project also explores **PyCaret** for automated regression model comparison and future model improvement.
-
-### 📊 Evaluation
-
-The model is evaluated using:
-
-* **R² Score**
-* **MAE**
-* **MSE**
-* **RMSE**
-
-A prediction workflow for **unseen house data** is also included.
+**Data → Transformation → Modeling → Evaluation → Prediction**
 
 ---
 
-### 🧹 Data Preparation
+## 🔬 Two Approaches
 
+### 01 · Linear Regression
+
+A hands-on Machine Learning workflow using **Scikit-learn**.
+
+Includes:
+
+* Data preprocessing
 * Exploratory Data Analysis
-* Outlier detection using **IQR**
-* Feature scaling with **StandardScaler**
+* Outlier detection
+* Feature scaling
 * Train/Test split
-* Data leakage prevention
+* Multiple Linear Regression
+* Model evaluation
+* Prediction on unseen data
+
+📓 [View Linear Regression Notebook](https://github.com/MMosayebi/Projects/blob/main/House%20Price%20Prediction/House%20Price%20Prediction%20%28using%20linear%20regression%29.ipynb)
 
 ---
 
-### 🛠️ Tech Stack
+### 02 · PyCaret Regression
 
-`Python` · `Pandas` · `NumPy` · `Matplotlib` · `Seaborn` · `Scikit-learn` · `PyCaret` · `Jupyter`
+An automated Machine Learning workflow using **PyCaret** to compare different regression models and identify promising candidates.
 
----
-
-### 🚀 Future Improvements
-
-* Feature Engineering
-* Advanced Regression Models
-* Hyperparameter Tuning
-* Cross-Validation
-* Better Outlier Handling
-* Prediction Intervals
-* Model Comparison
+📓 [View PyCaret Notebook](https://github.com/MMosayebi/Projects/blob/main/House%20Price%20Prediction/House%20Price%20Predcition%20%28using%20Pycaret%29.ipynb)
 
 ---
 
-### 📁 Project Structure
+## 📊 Evaluation
+
+Models are evaluated using standard regression metrics:
+
+| Metric   | Purpose                  |
+| -------- | ------------------------ |
+| **R²**   | Model explanatory power  |
+| **MAE**  | Average absolute error   |
+| **MSE**  | Squared prediction error |
+| **RMSE** | Typical prediction error |
+
+---
+
+## 🗂️ Project Structure
 
 ```text
 House Price Prediction/
+│
+├── data transform/
+│   └── data.xlsx
+│
 ├── dataset/
-├── modules/
-├── notebooks/
-├── README.md
-└── requirements.txt
+│   └── HousePrice.csv
+│
+├── House Price Prediction (using linear regression).ipynb
+├── House Price Predcition (using Pycaret).ipynb
+├── requirements.txt
+└── README.md
 ```
 
 ---
 
-### 👨‍💻 Author
+## 🛠️ Tech Stack
+
+**Python**
+
+`Pandas` · `NumPy` · `Scikit-learn`
+`Matplotlib` · `Seaborn` · `PyCaret`
+`Jupyter Notebook` · `Excel`
+
+---
+
+## 🚀 Future Improvements
+
+* Feature Engineering
+* Advanced Regression Models
+* Cross-Validation
+* Hyperparameter Tuning
+* Prediction Intervals
+* Model Comparison
+* Improved handling of outliers
+
+---
+
+## 💡 Key Takeaway
+
+> **The goal is not just to build a model — it is to understand the process behind the prediction.**
+
+This project demonstrates how the same regression problem can be approached through both a **hands-on Scikit-learn workflow** and an **automated Machine Learning workflow with PyCaret**.
+
+---
+
+## 👨‍💻 Author
 
 **Mohammad Mosayebi**
 
-Data Analysis · Data Science · Machine Learning
+*Data Analysis · Data Science · Machine Learning*
 
-[GitHub](https://github.com/MMosayebi)
+GitHub: [MMosayebi](https://github.com/MMosayebi)
+
+---
+
+⭐ If you find this project useful, feel free to star the repository.
