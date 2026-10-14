@@ -10,6 +10,7 @@ Each project includes:
 
 ##  Project List
 
-- **[Customer Segmentation](https://github.com/MMosayebi/Work-samples/tree/def52f6ac8b5caeb533d02adda623acc51a4ffcd/Customer%20Segmentation)**  
-- **[Heart Attack](https://github.com/MMosayebi/Work-samples/tree/7fb55d4d322dd9d786a9254437be3c080534d431/Heart%20Attack)**  
-- **[Customer-Purchase-History](https://github.com/MMosayebi/Work-samples/tree/23a476a620b935816922d161f3b24491abf1df6c/Customer-Purchase-History)**
+- **[Customer Segmentation](https://github.com/MMosayebi/Projects/tree/a748c619328f3213b0041cc890d07be4c24a3b19/Customer%20Segmentation)**  
+- **[Heart Attack](https://github.com/MMosayebi/Projects/tree/a748c619328f3213b0041cc890d07be4c24a3b19/Heart%20Attack)**  
+- **[Customer Purchase History](https://github.com/MMosayebi/Projects/tree/a748c619328f3213b0041cc890d07be4c24a3b19/Customer-Purchase-History)**
+- **[House Price Prediction](https://github.com/MMosayebi/Projects/tree/a748c619328f3213b0041cc890d07be4c24a3b19/House%20Price%20Prediction)**
