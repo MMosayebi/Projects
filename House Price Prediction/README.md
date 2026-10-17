@@ -1,91 +1,139 @@
-# 🏠 House Price Prediction
+🏠 House Price Prediction
 
-A Machine Learning regression project for predicting house prices based on property features.
+«A regression project focused on predicting house prices using Python and Machine Learning.»
 
-### 🎯 Goal
+🎯 Project Overview
 
-Build a regression model that predicts house prices using:
+This project was developed as a Machine Learning practice project using a hypothetical house-price dataset obtained from an educational course.
 
-* 📐 Area
-* 🛏️ Number of Rooms
-* 🚗 Parking
-* 📦 Warehouse
-* 🛗 Elevator
+The goal was to build a regression workflow that predicts house prices based on:
 
----
+- 📐 Area
+- 🛏️ Number of Rooms
+- 🚗 Parking
+- 📦 Warehouse
+- 🛗 Elevator
 
-### 🔄 Workflow
-
-```text
-Data → EDA → Preprocessing → Outlier Detection
-     → Train/Test Split → Scaling
-     → Regression → Evaluation → Prediction
-```
-
-### 🤖 Model
-
-**Multiple Linear Regression** is used as the baseline model.
-
-The project also explores **PyCaret** for automated regression model comparison and future model improvement.
-
-### 📊 Evaluation
-
-The model is evaluated using:
-
-* **R² Score**
-* **MAE**
-* **MSE**
-* **RMSE**
-
-A prediction workflow for **unseen house data** is also included.
+Rather than focusing only on the final prediction, the project explores the complete workflow from data preparation to model evaluation.
 
 ---
 
-### 🧹 Data Preparation
+🔍 Project Workflow
 
-* Exploratory Data Analysis
-* Outlier detection using **IQR**
-* Feature scaling with **StandardScaler**
-* Train/Test split
-* Data leakage prevention
+Raw Data → Data Cleaning → EDA → Outlier Detection → Feature Scaling → Modeling → Evaluation → Prediction
+
+01 · Data Cleaning
+
+The raw dataset was cleaned and prepared before applying Machine Learning models.
+
+This step includes:
+
+- Data inspection
+- Handling data inconsistencies
+- Preparing features for modeling
+- Preparing the dataset for further analysis
+
+02 · Linear Regression
+
+A manual Machine Learning workflow using Scikit-learn:
+
+- Data exploration and preparation
+- Outlier detection using IQR
+- Feature selection
+- Train/Test split
+- Feature scaling
+- Multiple Linear Regression
+- Model evaluation
+- Prediction on unseen data
+
+03 · PyCaret Regression
+
+An automated Machine Learning workflow using PyCaret to:
+
+- Compare regression models
+- Evaluate model performance
+- Identify promising models
+- Explore automated ML capabilities
 
 ---
 
-### 🛠️ Tech Stack
+📊 Evaluation
 
-`Python` · `Pandas` · `NumPy` · `Matplotlib` · `Seaborn` · `Scikit-learn` · `PyCaret` · `Jupyter`
+The models are evaluated using:
 
----
+Metric| Purpose
+R²| Measures explained variance
+MAE| Average absolute prediction error
+MSE| Penalizes larger errors
+RMSE| Measures prediction error in target units
 
-### 🚀 Future Improvements
-
-* Feature Engineering
-* Advanced Regression Models
-* Hyperparameter Tuning
-* Cross-Validation
-* Better Outlier Handling
-* Prediction Intervals
-* Model Comparison
+The Linear Regression model is treated as a baseline, providing a reference point for future model improvement.
 
 ---
 
-### 📁 Project Structure
+📁 Project Structure
 
-```text
 House Price Prediction/
+│
+├── data transform/
+│   └── data.xlsx
+│
 ├── dataset/
-├── modules/
-├── notebooks/
-├── README.md
+│   └── HousePrice.csv
+│
+├── Data Cleaning.ipynb
+├── House Price Predcition (using Pycaret).ipynb
+├── House Price Prediction (using linear regression).ipynb
+│
 └── requirements.txt
-```
 
 ---
 
-### 👨‍💻 Author
+🛠️ Tech Stack
 
-**Mohammad Mosayebi**
+Python · Pandas · NumPy · Scikit-learn
+Matplotlib · Seaborn · PyCaret · Jupyter Notebook · Excel
 
+---
+
+📓 Notebooks
+
+🔹 Data Cleaning
+"View Notebook" (https://github.com/MMosayebi/Projects/blob/main/House%20Price%20Prediction/Data%20Cleaning.ipynb)
+
+🔹 Linear Regression
+"View Notebook" (https://github.com/MMosayebi/Projects/blob/main/House%20Price%20Prediction/House%20Price%20Prediction%20%28using%20linear%20regression%29.ipynb)
+
+🔹 PyCaret Regression
+"View Notebook" (https://github.com/MMosayebi/Projects/blob/main/House%20Price%20Prediction/House%20Price%20Predcition%20%28using%20Pycaret%29.ipynb)
+
+🔹 Requirements
+"View requirements.txt" (https://github.com/MMosayebi/Projects/blob/main/House%20Price%20Prediction/requirements.txt)
+
+---
+
+🚀 Future Improvements
+
+- Feature engineering
+- Advanced regression models
+- Cross-validation
+- Hyperparameter tuning
+- Better outlier handling
+- Model comparison
+- Prediction intervals
+- Improved preprocessing pipeline
+
+---
+
+💡 Key Takeaway
+
+This project was created to practice the end-to-end regression workflow and understand how different preprocessing and modeling decisions affect prediction performance.
+
+The dataset is hypothetical and intended for educational purposes, while the analysis, data cleaning, modeling workflow, evaluation, and experimentation were performed as part of this project.
+
+---
+
+👤 Author
+
+Mohammad Mosayebi
 Data Analysis · Data Science · Machine Learning
-
-[GitHub](https://github.com/MMosayebi)
